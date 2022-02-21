@@ -22,14 +22,6 @@ function Header2() {
     );
 }
 
-function Para2() {
-    return(
-        <div>
-            <p></p>
-        </div>
-    );
-}
-
 
 
 
