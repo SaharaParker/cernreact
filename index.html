@@ -7,16 +7,198 @@
     <title>World Wide Web</title>
 </head>
 <body>
-<div id="App"></div>
-<script src="app.js"></script>
+<div id="app"></div>
+
 <script src="js/react.js"></script>
 <script src="js/react-dom.js"></script>
 <script src="js/babel.js"></script>
 
-<script type="text/babel"></script>
+<script type="text/babel">
+
+
+        function Header() {
+            const infoName = "World Wide Web"
+            return(
+                <div>
+                    <h1>{infoName}</h1>
+                    <p></p>
+                </div>
+            )
+        }
+
+
+        function Para1() {
+            return(
+                <div>
+                    <p>The WorldWideWeb (W3) is a wide-area <a name="0" href="#">
+                        hypermedia </a> information retrieval
+                        initiative aiming to give universal
+                        access to a large universe of documents.<p>
+                            Everything there is online about
+                            W3 is linked directly or indirectly
+                            to this document, including an <a name="24" href="#">executive
+                            summary</a> of the project, <a name="29" href="#">Mailing lists</a>
+                            , <a name="30" href="#">Policy</a> , November's  <a name="34" href="#">W3  news</a> ,
+                            <a name="41" href="#">Frequently Asked Questions</a> .
+                        </p></p>
+                </div>
+            )
+        }
+
+        function WhatsOutThere() {
+            return(
+                <div>
+                    <dt><a name="44" href="http://info.cern.ch/hypertext/DataSources/Top.html">What's out there?</a>
+                    </dt>
+
+                    <dd> Pointers to the
+                        world's online information,<a name="45" href="http://info.cern.ch/hypertext/DataSources/bySubject/Overview.html"> subjects</a>
+                        , <a name="z54" href="http://info.cern.ch/hypertext/DataSources/WWW/Servers.html">W3 servers</a>, etc.
+                    </dd>
+                </div>
+            )
+        }
 
 
 
+        function Help() {
+            return(
+                <div>
+                    <dt><a name="46" href="#">Help</a>
+                    </dt>
+
+                    <dd> on the browser you are using
+                    </dd>
+                </div>
+            )
+        }
+
+
+
+
+        function SoftwareProducts() {
+            return(
+                <div>
+                    <dt><a name="13" href="#">Software Products</a>
+                    </dt>
+
+                    <dd> A list of W3 project
+                        components and their current state.
+                        (e.g. <a name="27" href="#">Line Mode</a> ,X11 <a name="35" href="#">Viola</a> ,  <a name="26" href="#">NeXTStep</a>
+                        , <a name="25" href="#">Servers</a> , <a name="51" href="#">Tools</a> ,<a name="53" href="#"> Mail robot</a> ,<a name="52" href="#">
+                            Library</a> )
+                    </dd>
+                </div>
+            )
+        }
+
+
+        function Technical() {
+            return(
+                <div>
+                    <dt><a name="47" href="#">Technical</a>
+                    </dt>
+
+                    <dd> Details of protocols, formats,
+                        program internals etc
+                    </dd>
+                </div>
+            )
+        }
+
+
+        function Bibliography() {
+            return(
+                <div>
+                    <dt><a name="40" href="#">Bibliography</a>
+                    </dt>
+
+                    <dd> Paper documentation
+                        on  W3 and references.
+                    </dd>
+                </div>
+            )
+        }
+
+
+        function People() {
+            return(
+                <div>
+                    <dt><a name="14" href="#">People</a>
+                    </dt>
+
+                    <dd> A list of some people involved
+                        in the project.
+                    </dd>
+                </div>
+            )
+        }
+
+
+        function History() {
+            return(
+                <div>
+                    <dt><a name="15" href="#">History</a>
+                    </dt>
+
+                    <dd> A summary of the history
+                        of the project.
+                    </dd>
+                </div>
+            )
+        }
+
+        function HowCanIHelp() {
+            return(
+                <div>
+                    <dt><a name="37" href="#">How can I help</a> ?
+                    </dt>
+
+                    <dd> If you would like
+                        to support the web..
+                    </dd>
+                </div>
+            )
+        }
+
+        function GettingCode() {
+            return(
+                <div>
+                    <dt><a name="48" href="#">Getting code</a>
+                    </dt>
+
+                    <dd> Getting the code by <a name="49" href="#">
+                        anonymous FTP</a> , etc.
+                    </dd>
+                </div>
+            )
+        }
+
+        function App() {
+            return (
+                <div>
+                    <Header/>
+                    <Para1/>
+                    <WhatsOutThere/>
+                    <Help/>
+                    <SoftwareProducts/>
+                    <Technical/>
+                    <Bibliography/>
+                    <People/>
+                    <History/>
+                    <HowCanIHelp/>
+                    <GettingCode/>
+                </div>
+            );
+        }
+
+    ReactDOM.render(
+        <App/>,
+        document.getElementById('app')
+    );
+
+
+</script>
 </body>
 </html>
 
